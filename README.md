@@ -28,6 +28,7 @@ Build the project using Gradle:
 Running Tests
 Run the test using TestRunner class.
 
+
 The test structure follows the standard Karate BDD directory structure:
 
 
