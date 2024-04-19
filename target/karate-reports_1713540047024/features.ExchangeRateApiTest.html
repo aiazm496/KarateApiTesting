@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>features.ExchangeRateApiTest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-04-19 08:43:40 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:15]"><span>[1.1:15]</span> <span>Exchange Rate Sanity for different Base Currencies</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:16]"><span>[1.2:16]</span> <span>Exchange Rate Sanity for different Base Currencies</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:17]"><span>[1.3:17]</span> <span>Exchange Rate Sanity for different Base Currencies</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:18]"><span>[1.4:18]</span> <span>Exchange Rate Sanity for different Base Currencies</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:21]"><span>[2:21]</span> <span>Verify exchange Rate range of Currency AED with base currency as USD</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/ExchangeRateApiTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Exchange Rate</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:15]</span>
+                <span class="scenario-name">Exchange Rate Sanity for different Base Currencies</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>521</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseCurrency = &#39;USD&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">20:43:39.458 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path baseCurrency</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">497</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">20:43:39.795 request:
+1 &gt; GET https://open.er-api.com/v6/latest/USD
+1 &gt; Host: open.er-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:40.034 response time in milliseconds: 233
+1 &lt; 200
+1 &lt; Date: Fri, 19 Apr 2024 15:13:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=3600
+1 &lt; x-content-type-options: NOSNIFF
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; Last-Modified: Fri, 19 Apr 2024 14:06:09 GMT
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 3064
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=ojSuCpM4TcOTCghV%2Fq%2FaPEdjDJpxNGCUWo4qvkiHp5mrmRU1HKsYHpkI0T%2BITb9HSZDWt7UoMEyM1bItWjtYciP0l6Qf0BlVcEvxZNtfxXQzHQgPtxMoy79YzBtYrCnKvA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 876dd7010c2c46aa-BOM
+{&quot;result&quot;:&quot;success&quot;,&quot;provider&quot;:&quot;https://www.exchangerate-api.com&quot;,&quot;documentation&quot;:&quot;https://www.exchangerate-api.com/docs/free&quot;,&quot;terms_of_use&quot;:&quot;https://www.exchangerate-api.com/terms&quot;,&quot;time_last_update_unix&quot;:1713484951,&quot;time_last_update_utc&quot;:&quot;Fri, 19 Apr 2024 00:02:31 +0000&quot;,&quot;time_next_update_unix&quot;:1713572621,&quot;time_next_update_utc&quot;:&quot;Sat, 20 Apr 2024 00:23:41 +0000&quot;,&quot;time_eol_unix&quot;:0,&quot;base_code&quot;:&quot;USD&quot;,&quot;rates&quot;:{&quot;USD&quot;:1,&quot;AED&quot;:3.6725,&quot;AFN&quot;:71.880054,&quot;ALL&quot;:95.125632,&quot;AMD&quot;:395.275713,&quot;ANG&quot;:1.79,&quot;AOA&quot;:844.081605,&quot;ARS&quot;:864.75,&quot;AUD&quot;:1.555364,&quot;AWG&quot;:1.79,&quot;AZN&quot;:1.699851,&quot;BAM&quot;:1.835638,&quot;BBD&quot;:2,&quot;BDT&quot;:109.748642,&quot;BGN&quot;:1.835188,&quot;BHD&quot;:0.376,&quot;BIF&quot;:2855.547946,&quot;BMD&quot;:1,&quot;BND&quot;:1.36137,&quot;BOB&quot;:6.927649,&quot;BRL&quot;:5.240698,&quot;BSD&quot;:1,&quot;BTN&quot;:83.579077,&quot;BWP&quot;:13.838373,&quot;BYN&quot;:3.271865,&quot;BZD&quot;:2,&quot;CAD&quot;:1.37588,&quot;CDF&quot;:2753.408567,&quot;CHF&quot;:0.911297,&quot;CLP&quot;:977.98885,&quot;CNY&quot;:7.245235,&quot;COP&quot;:3903.022492,&quot;CRC&quot;:500.840568,&quot;CUP&quot;:24,&quot;CVE&quot;:103.488877,&quot;CZK&quot;:23.700816,&quot;DJF&quot;:177.721,&quot;DKK&quot;:7.005368,&quot;DOP&quot;:59.01933,&quot;DZD&quot;:134.647688,&quot;EGP&quot;:48.38934,&quot;ERN&quot;:15,&quot;ETB&quot;:56.912738,&quot;EUR&quot;:0.93855,&quot;FJD&quot;:2.270023,&quot;FKP&quot;:0.803183,&quot;FOK&quot;:7.005576,&quot;GBP&quot;:0.80319,&quot;GEL&quot;:2.672123,&quot;GGP&quot;:0.803183,&quot;GHS&quot;:13.542739,&quot;GIP&quot;:0.803183,&quot;GMD&quot;:66.589892,&quot;GNF&quot;:8584.659368,&quot;GTQ&quot;:7.778461,&quot;GYD&quot;:209.47614,&quot;HKD&quot;:7.831134,&quot;HNL&quot;:24.709611,&quot;HRK&quot;:7.071482,&quot;HTG&quot;:132.527462,&quot;HUF&quot;:370.051394,&quot;IDR&quot;:16194.306987,&quot;ILS&quot;:3.789936,&quot;IMP&quot;:0.803183,&quot;INR&quot;:83.57912,&quot;IQD&quot;:1310.902902,&quot;IRR&quot;:41997.02635,&quot;ISK&quot;:140.753423,&quot;JEP&quot;:0.803183,&quot;JMD&quot;:155.758265,&quot;JOD&quot;:0.709,&quot;JPY&quot;:154.536484,&quot;KES&quot;:131.944453,&quot;KGS&quot;:89.19853,&quot;KHR&quot;:4052.438748,&quot;KID&quot;:1.554708,&quot;KMF&quot;:461.73482,&quot;KRW&quot;:1377.678274,&quot;KWD&quot;:0.308262,&quot;KYD&quot;:0.833333,&quot;KZT&quot;:446.993173,&quot;LAK&quot;:20992.186273,&quot;LBP&quot;:89500,&quot;LKR&quot;:301.234576,&quot;LRD&quot;:194.389162,&quot;LSL&quot;:19.131355,&quot;LYD&quot;:4.863492,&quot;MAD&quot;:10.121543,&quot;MDL&quot;:17.920754,&quot;MGA&quot;:4392.367282,&quot;MKD&quot;:57.916748,&quot;MMK&quot;:2097.278736,&quot;MNT&quot;:3371.997629,&quot;MOP&quot;:8.066068,&quot;MRU&quot;:39.658565,&quot;MUR&quot;:46.47281,&quot;MVR&quot;:15.448248,&quot;MWK&quot;:1740.58032,&quot;MXN&quot;:17.065934,&quot;MYR&quot;:4.783685,&quot;MZN&quot;:63.945176,&quot;NAD&quot;:19.131355,&quot;NGN&quot;:1133.029096,&quot;NIO&quot;:36.839749,&quot;NOK&quot;:11.039204,&quot;NPR&quot;:133.726524,&quot;NZD&quot;:1.692546,&quot;OMR&quot;:0.384497,&quot;PAB&quot;:1,&quot;PEN&quot;:3.740493,&quot;PGK&quot;:3.798317,&quot;PHP&quot;:57.307974,&quot;PKR&quot;:278.249993,&quot;PLN&quot;:4.06808,&quot;PYG&quot;:7377.092349,&quot;QAR&quot;:3.64,&quot;RON&quot;:4.66225,&quot;RSD&quot;:109.80664,&quot;RUB&quot;:94.200579,&quot;RWF&quot;:1299.301054,&quot;SAR&quot;:3.75,&quot;SBD&quot;:8.512023,&quot;SCR&quot;:13.563727,&quot;SDG&quot;:512.036827,&quot;SEK&quot;:10.9571,&quot;SGD&quot;:1.361163,&quot;SHP&quot;:0.803183,&quot;SLE&quot;:22.639393,&quot;SLL&quot;:22639.393086,&quot;SOS&quot;:571.699909,&quot;SRD&quot;:34.773166,&quot;SSP&quot;:1566.911774,&quot;STN&quot;:22.9944,&quot;SYP&quot;:12935.725165,&quot;SZL&quot;:19.131355,&quot;THB&quot;:36.791227,&quot;TJS&quot;:10.93431,&quot;TMT&quot;:3.500401,&quot;TND&quot;:3.155909,&quot;TOP&quot;:2.355385,&quot;TRY&quot;:32.576287,&quot;TTD&quot;:6.755884,&quot;TVD&quot;:1.554708,&quot;TWD&quot;:32.45849,&quot;TZS&quot;:2583.212617,&quot;UAH&quot;:39.612941,&quot;UGX&quot;:3809.907006,&quot;UYU&quot;:38.869302,&quot;UZS&quot;:12696.88128,&quot;VES&quot;:36.3421,&quot;VND&quot;:25373.591022,&quot;VUV&quot;:122.109586,&quot;WST&quot;:2.776899,&quot;XAF&quot;:615.646426,&quot;XCD&quot;:2.7,&quot;XDR&quot;:0.758651,&quot;XOF&quot;:615.646426,&quot;XPF&quot;:111.998682,&quot;YER&quot;:250.36877,&quot;ZAR&quot;:19.134496,&quot;ZMW&quot;:25.415779,&quot;ZWL&quot;:13.3437}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == exchangeRateApiSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.base_code == &#39;USD&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def rateCount = karate.sizeOf(response.rates)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert rateCount == 162</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:16]</span>
+                <span class="scenario-name">Exchange Rate Sanity for different Base Currencies</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>338</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseCurrency = &#39;EUR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">20:43:40.074 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path baseCurrency</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">333</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">20:43:40.083 request:
+1 &gt; GET https://open.er-api.com/v6/latest/EUR
+1 &gt; Host: open.er-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:40.413 response time in milliseconds: 329
+1 &lt; 200
+1 &lt; Date: Fri, 19 Apr 2024 15:13:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=3600
+1 &lt; x-content-type-options: NOSNIFF
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; Last-Modified: Fri, 19 Apr 2024 14:16:44 GMT
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=9%2F2lI%2FP5fczc%2BAdyCKF%2BRBEt9%2B8J%2BmzuP28qoVwG4Et0tZPtRUvwl4PWuIf%2BI2gQV3NtNcVcONV5k5Ba0iHYmPghG9me1BrVH9O6Yhnp%2Bnq2qClcPfkuvkeavxJB62P2ag%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 876dd701c9ae84c5-BOM
+{&quot;result&quot;:&quot;success&quot;,&quot;provider&quot;:&quot;https://www.exchangerate-api.com&quot;,&quot;documentation&quot;:&quot;https://www.exchangerate-api.com/docs/free&quot;,&quot;terms_of_use&quot;:&quot;https://www.exchangerate-api.com/terms&quot;,&quot;time_last_update_unix&quot;:1713484951,&quot;time_last_update_utc&quot;:&quot;Fri, 19 Apr 2024 00:02:31 +0000&quot;,&quot;time_next_update_unix&quot;:1713572621,&quot;time_next_update_utc&quot;:&quot;Sat, 20 Apr 2024 00:23:41 +0000&quot;,&quot;time_eol_unix&quot;:0,&quot;base_code&quot;:&quot;EUR&quot;,&quot;rates&quot;:{&quot;EUR&quot;:1,&quot;AED&quot;:3.912955,&quot;AFN&quot;:76.578761,&quot;ALL&quot;:101.486389,&quot;AMD&quot;:421.022776,&quot;ANG&quot;:1.907199,&quot;AOA&quot;:902.730213,&quot;ARS&quot;:921.368933,&quot;AUD&quot;:1.656971,&quot;AWG&quot;:1.907199,&quot;AZN&quot;:1.815016,&quot;BAM&quot;:1.95583,&quot;BBD&quot;:2.130949,&quot;BDT&quot;:116.888267,&quot;BGN&quot;:1.95583,&quot;BHD&quot;:0.400618,&quot;BIF&quot;:3044.192534,&quot;BMD&quot;:1.065474,&quot;BND&quot;:1.450424,&quot;BOB&quot;:7.393074,&quot;BRL&quot;:5.595287,&quot;BSD&quot;:1.065474,&quot;BTN&quot;:89.064482,&quot;BWP&quot;:14.7894,&quot;BYN&quot;:3.493292,&quot;BZD&quot;:2.130949,&quot;CAD&quot;:1.466371,&quot;CDF&quot;:2962.36036,&quot;CHF&quot;:0.970997,&quot;CLP&quot;:1044.357021,&quot;CNY&quot;:7.718248,&quot;COP&quot;:4157.42052,&quot;CRC&quot;:534.581849,&quot;CUP&quot;:25.571384,&quot;CVE&quot;:110.265,&quot;CZK&quot;:25.269874,&quot;DJF&quot;:189.357165,&quot;DKK&quot;:7.460958,&quot;DOP&quot;:62.979936,&quot;DZD&quot;:143.646673,&quot;EGP&quot;:51.528627,&quot;ERN&quot;:15.982115,&quot;ETB&quot;:60.87921,&quot;FJD&quot;:2.424548,&quot;FKP&quot;:0.855731,&quot;FOK&quot;:7.460958,&quot;GBP&quot;:0.855736,&quot;GEL&quot;:2.848302,&quot;GGP&quot;:0.855731,&quot;GHS&quot;:14.464498,&quot;GIP&quot;:0.855731,&quot;GMD&quot;:70.609319,&quot;GNF&quot;:9147.211122,&quot;GTQ&quot;:8.302281,&quot;GYD&quot;:223.53637,&quot;HKD&quot;:8.341683,&quot;HNL&quot;:26.364942,&quot;HRK&quot;:7.5345,&quot;HTG&quot;:141.489673,&quot;HUF&quot;:394.231863,&quot;IDR&quot;:17249.594676,&quot;ILS&quot;:4.036073,&quot;IMP&quot;:0.855731,&quot;INR&quot;:89.064609,&quot;IQD&quot;:1399.242553,&quot;IRR&quot;:45397.780768,&quot;ISK&quot;:150.296887,&quot;JEP&quot;:0.855731,&quot;JMD&quot;:165.416492,&quot;JOD&quot;:0.755421,&quot;JPY&quot;:164.642401,&quot;KES&quot;:141.648575,&quot;KGS&quot;:95.215312,&quot;KHR&quot;:4326.605263,&quot;KID&quot;:1.656968,&quot;KMF&quot;:491.96775,&quot;KRW&quot;:1468.865465,&quot;KWD&quot;:0.328726,&quot;KYD&quot;:0.887895,&quot;KZT&quot;:476.107267,&quot;LAK&quot;:22299.027219,&quot;LBP&quot;:95359.953173,&quot;LKR&quot;:321.128238,&quot;LRD&quot;:207.510836,&quot;LSL&quot;:20.376485,&quot;LYD&quot;:5.211373,&quot;MAD&quot;:10.802437,&quot;MDL&quot;:19.074678,&quot;MGA&quot;:4638.71274,&quot;MKD&quot;:61.492,&quot;MMK&quot;:2690.806098,&quot;MNT&quot;:3587.0651,&quot;MOP&quot;:8.593602,&quot;MRU&quot;:42.281342,&quot;MUR&quot;:49.476482,&quot;MVR&quot;:16.482692,&quot;MWK&quot;:1857.176318,&quot;MXN&quot;:18.174686,&quot;MYR&quot;:5.105253,&quot;MZN&quot;:68.179737,&quot;NAD&quot;:20.376485,&quot;NGN&quot;:1224.874025,&quot;NIO&quot;:39.338893,&quot;NOK&quot;:11.758576,&quot;NPR&quot;:142.503171,&quot;NZD&quot;:1.802283,&quot;OMR&quot;:0.409672,&quot;PAB&quot;:1.065474,&quot;PEN&quot;:3.987754,&quot;PGK&quot;:4.052926,&quot;PHP&quot;:61.035908,&quot;PKR&quot;:296.400624,&quot;PLN&quot;:4.334123,&quot;PYG&quot;:7862.137927,&quot;QAR&quot;:3.878327,&quot;RON&quot;:4.976011,&quot;RSD&quot;:117.148035,&quot;RUB&quot;:100.369473,&quot;RWF&quot;:1410.525819,&quot;SAR&quot;:3.995529,&quot;SBD&quot;:9.025408,&quot;SCR&quot;:14.8637,&quot;SDG&quot;:477.245283,&quot;SEK&quot;:11.667686,&quot;SGD&quot;:1.450424,&quot;SHP&quot;:0.855731,&quot;SLE&quot;:24.121749,&quot;SLL&quot;:24120.938042,&quot;SOS&quot;:610.059369,&quot;SRD&quot;:37.201267,&quot;SSP&quot;:1661.630313,&quot;STN&quot;:24.5,&quot;SYP&quot;:13782.376067,&quot;SZL&quot;:20.376485,&quot;THB&quot;:39.194814,&quot;TJS&quot;:11.670646,&quot;TMT&quot;:3.736251,&quot;TND&quot;:3.363701,&quot;TOP&quot;:2.502168,&quot;TRY&quot;:34.709871,&quot;TTD&quot;:7.486908,&quot;TVD&quot;:1.656968,&quot;TWD&quot;:34.555727,&quot;TZS&quot;:2761.90673,&quot;UAH&quot;:42.29753,&quot;UGX&quot;:4068.546972,&quot;USD&quot;:1.065476,&quot;UYU&quot;:41.474398,&quot;UZS&quot;:13596.703392,&quot;VES&quot;:38.751581,&quot;VND&quot;:27049.315781,&quot;VUV&quot;:129.766993,&quot;WST&quot;:2.930226,&quot;XAF&quot;:655.957,&quot;XCD&quot;:2.876781,&quot;XDR&quot;:0.81006,&quot;XOF&quot;:655.957,&quot;XPF&quot;:119.332,&quot;YER&quot;:267.227432,&quot;ZAR&quot;:20.379786,&quot;ZMW&quot;:27.184071,&quot;ZWL&quot;:14.1644}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == exchangeRateApiSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.base_code == &#39;EUR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def rateCount = karate.sizeOf(response.rates)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert rateCount == 162</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:17]</span>
+                <span class="scenario-name">Exchange Rate Sanity for different Base Currencies</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>362</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseCurrency = &#39;GBP&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">20:43:40.427 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path baseCurrency</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">357</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7">20:43:40.447 request:
+1 &gt; GET https://open.er-api.com/v6/latest/GBP
+1 &gt; Host: open.er-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:40.801 response time in milliseconds: 354
+1 &lt; 200
+1 &lt; Date: Fri, 19 Apr 2024 15:13:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=3600
+1 &lt; x-content-type-options: NOSNIFF
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; Last-Modified: Fri, 19 Apr 2024 14:52:23 GMT
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=afgq7cNV4khrFZReNn8xdcyrviHfhWqaJRCwuWJtgdutDvB3zj4z34nA3Nrevc6%2Bj%2B6YF82trGT8RRDBOXGVW%2FLuiAK92wmcIvgajT4%2B63hwDrEcBH8hVEKz2EmLGIvZwQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 876dd7041a9cf488-BOM
+{&quot;result&quot;:&quot;success&quot;,&quot;provider&quot;:&quot;https://www.exchangerate-api.com&quot;,&quot;documentation&quot;:&quot;https://www.exchangerate-api.com/docs/free&quot;,&quot;terms_of_use&quot;:&quot;https://www.exchangerate-api.com/terms&quot;,&quot;time_last_update_unix&quot;:1713484951,&quot;time_last_update_utc&quot;:&quot;Fri, 19 Apr 2024 00:02:31 +0000&quot;,&quot;time_next_update_unix&quot;:1713572701,&quot;time_next_update_utc&quot;:&quot;Sat, 20 Apr 2024 00:25:01 +0000&quot;,&quot;time_eol_unix&quot;:0,&quot;base_code&quot;:&quot;GBP&quot;,&quot;rates&quot;:{&quot;GBP&quot;:1,&quot;AED&quot;:4.572419,&quot;AFN&quot;:89.428853,&quot;ALL&quot;:118.516039,&quot;AMD&quot;:491.959999,&quot;ANG&quot;:2.228626,&quot;AOA&quot;:1054.596233,&quot;ARS&quot;:1076.650537,&quot;AUD&quot;:1.936268,&quot;AWG&quot;:2.228626,&quot;AZN&quot;:2.120341,&quot;BAM&quot;:2.285565,&quot;BBD&quot;:2.490085,&quot;BDT&quot;:136.563202,&quot;BGN&quot;:2.285406,&quot;BHD&quot;:0.468136,&quot;BIF&quot;:3555.537037,&quot;BMD&quot;:1.245043,&quot;BND&quot;:1.694829,&quot;BOB&quot;:8.633649,&quot;BRL&quot;:6.535558,&quot;BSD&quot;:1.245043,&quot;BTN&quot;:104.07795,&quot;BWP&quot;:17.295431,&quot;BYN&quot;:4.081946,&quot;BZD&quot;:2.490085,&quot;CAD&quot;:1.712992,&quot;CDF&quot;:3459.441441,&quot;CHF&quot;:1.134656,&quot;CLP&quot;:1219.761506,&quot;CNY&quot;:9.019527,&quot;COP&quot;:4855.045255,&quot;CRC&quot;:624.285916,&quot;CUP&quot;:29.881021,&quot;CVE&quot;:128.854652,&quot;CZK&quot;:29.531536,&quot;DJF&quot;:221.270205,&quot;DKK&quot;:8.718207,&quot;DOP&quot;:73.548114,&quot;DZD&quot;:167.750915,&quot;EGP&quot;:60.244146,&quot;ERN&quot;:18.675638,&quot;ETB&quot;:69.870348,&quot;EUR&quot;:1.168585,&quot;FJD&quot;:2.832432,&quot;FKP&quot;:1,&quot;FOK&quot;:8.718235,&quot;GEL&quot;:3.328212,&quot;GGP&quot;:1,&quot;GHS&quot;:16.900306,&quot;GIP&quot;:1,&quot;GMD&quot;:82.498881,&quot;GNF&quot;:10687.570429,&quot;GTQ&quot;:9.695423,&quot;GYD&quot;:261.045547,&quot;HKD&quot;:9.747762,&quot;HNL&quot;:30.78904,&quot;HRK&quot;:8.804746,&quot;HTG&quot;:165.231497,&quot;HUF&quot;:460.657077,&quot;IDR&quot;:20173.181034,&quot;ILS&quot;:4.716381,&quot;IMP&quot;:1,&quot;INR&quot;:104.078082,&quot;IQD&quot;:1634.034043,&quot;IRR&quot;:53046.391211,&quot;ISK&quot;:175.560981,&quot;JEP&quot;:1,&quot;JMD&quot;:192.270331,&quot;JOD&quot;:0.882735,&quot;JPY&quot;:192.355385,&quot;KES&quot;:165.461649,&quot;KGS&quot;:111.258042,&quot;KHR&quot;:5052.605263,&quot;KID&quot;:1.936278,&quot;KMF&quot;:574.908929,&quot;KRW&quot;:1715.035171,&quot;KWD&quot;:0.384148,&quot;KYD&quot;:1.037535,&quot;KZT&quot;:556.297422,&quot;LAK&quot;:26040.856804,&quot;LBP&quot;:111431.307403,&quot;LKR&quot;:374.427928,&quot;LRD&quot;:242.331632,&quot;LSL&quot;:23.810123,&quot;LYD&quot;:6.085836,&quot;MAD&quot;:12.624133,&quot;MDL&quot;:22.283515,&quot;MGA&quot;:5476.261837,&quot;MKD&quot;:72.0047,&quot;MMK&quot;:3143.258287,&quot;MNT&quot;:4190.722118,&quot;MOP&quot;:10.042323,&quot;MRU&quot;:49.376109,&quot;MUR&quot;:57.846317,&quot;MVR&quot;:19.248526,&quot;MWK&quot;:2169.921734,&quot;MXN&quot;:21.236243,&quot;MYR&quot;:5.9645,&quot;MZN&quot;:79.660866,&quot;NAD&quot;:23.810123,&quot;NGN&quot;:1427.570341,&quot;NIO&quot;:45.94005,&quot;NOK&quot;:13.740667,&quot;NPR&quot;:166.52472,&quot;NZD&quot;:2.105994,&quot;OMR&quot;:0.478715,&quot;PAB&quot;:1.245043,&quot;PEN&quot;:4.659154,&quot;PGK&quot;:4.733017,&quot;PHP&quot;:71.284733,&quot;PKR&quot;:346.26366,&quot;PLN&quot;:5.063944,&quot;PYG&quot;:9181.422927,&quot;QAR&quot;:4.531955,&quot;RON&quot;:5.813841,&quot;RSD&quot;:136.93344,&quot;RUB&quot;:117.275464,&quot;RWF&quot;:1644.751957,&quot;SAR&quot;:4.66891,&quot;SBD&quot;:10.541198,&quot;SCR&quot;:17.36446,&quot;SDG&quot;:557.32656,&quot;SEK&quot;:13.631428,&quot;SGD&quot;:1.69483,&quot;SHP&quot;:1,&quot;SLE&quot;:28.18708,&quot;SLL&quot;:28186.097559,&quot;SOS&quot;:712.426716,&quot;SRD&quot;:43.443602,&quot;SSP&quot;:1942.190233,&quot;STN&quot;:28.630472,&quot;SYP&quot;:16095.090859,&quot;SZL&quot;:23.810123,&quot;THB&quot;:45.806321,&quot;TJS&quot;:13.640088,&quot;TMT&quot;:4.365869,&quot;TND&quot;:3.929578,&quot;TOP&quot;:2.922514,&quot;TRY&quot;:40.554462,&quot;TTD&quot;:8.584353,&quot;TVD&quot;:1.936278,&quot;TWD&quot;:40.403739,&quot;TZS&quot;:3220.539428,&quot;UAH&quot;:49.410784,&quot;UGX&quot;:4744.131371,&quot;USD&quot;:1.245038,&quot;UYU&quot;:48.433898,&quot;UZS&quot;:15887.568943,&quot;VES&quot;:45.247578,&quot;VND&quot;:31612.545409,&quot;VUV&quot;:151.567014,&quot;WST&quot;:3.422341,&quot;XAF&quot;:766.545238,&quot;XCD&quot;:3.361615,&quot;XDR&quot;:0.946409,&quot;XOF&quot;:766.545238,&quot;XPF&quot;:139.450263,&quot;YER&quot;:312.068811,&quot;ZAR&quot;:23.80787,&quot;ZMW&quot;:31.761759,&quot;ZWL&quot;:16.5709}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == exchangeRateApiSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.base_code == &#39;GBP&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def rateCount = karate.sizeOf(response.rates)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert rateCount == 162</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:18]</span>
+                <span class="scenario-name">Exchange Rate Sanity for different Base Currencies</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>64</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseCurrency = &#39;INR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.4">20:43:40.814 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path baseCurrency</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.7">20:43:40.821 request:
+1 &gt; GET https://open.er-api.com/v6/latest/INR
+1 &gt; Host: open.er-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:40.880 response time in milliseconds: 58
+1 &lt; 200
+1 &lt; Date: Fri, 19 Apr 2024 15:13:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=3600
+1 &lt; x-content-type-options: NOSNIFF
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; Last-Modified: Fri, 19 Apr 2024 13:57:46 GMT
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 1004
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=y6GtBfUwpSCpSm3C8On%2FvdHehhNEBhvKVqqNLpYl2MyLgfF62y2pn8iPvF%2B%2BqKEEhj5cv3VgnJkXMTIAbQwVRX24tRZr%2F8i4spG0g913cTCweqOnOJCj4XTIGx%2BdJWi4MA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 876dd70658946efe-BOM
+{&quot;result&quot;:&quot;success&quot;,&quot;provider&quot;:&quot;https://www.exchangerate-api.com&quot;,&quot;documentation&quot;:&quot;https://www.exchangerate-api.com/docs/free&quot;,&quot;terms_of_use&quot;:&quot;https://www.exchangerate-api.com/terms&quot;,&quot;time_last_update_unix&quot;:1713484951,&quot;time_last_update_utc&quot;:&quot;Fri, 19 Apr 2024 00:02:31 +0000&quot;,&quot;time_next_update_unix&quot;:1713572621,&quot;time_next_update_utc&quot;:&quot;Sat, 20 Apr 2024 00:23:41 +0000&quot;,&quot;time_eol_unix&quot;:0,&quot;base_code&quot;:&quot;INR&quot;,&quot;rates&quot;:{&quot;INR&quot;:1,&quot;AED&quot;:0.04394,&quot;AFN&quot;:0.858397,&quot;ALL&quot;:1.137595,&quot;AMD&quot;:4.721318,&quot;ANG&quot;:0.021417,&quot;AOA&quot;:10.0908,&quot;ARS&quot;:10.346484,&quot;AUD&quot;:0.018604,&quot;AWG&quot;:0.021417,&quot;AZN&quot;:0.020348,&quot;BAM&quot;:0.02196,&quot;BBD&quot;:0.023929,&quot;BDT&quot;:1.313686,&quot;BGN&quot;:0.021956,&quot;BHD&quot;:0.004499,&quot;BIF&quot;:34.12963,&quot;BMD&quot;:0.011965,&quot;BND&quot;:0.016289,&quot;BOB&quot;:0.082871,&quot;BRL&quot;:0.062738,&quot;BSD&quot;:0.011965,&quot;BTN&quot;:1,&quot;BWP&quot;:0.165557,&quot;BYN&quot;:0.039173,&quot;BZD&quot;:0.023929,&quot;CAD&quot;:0.016473,&quot;CDF&quot;:33.207207,&quot;CHF&quot;:0.0109,&quot;CLP&quot;:11.707614,&quot;CNY&quot;:0.086655,&quot;COP&quot;:46.601915,&quot;CRC&quot;:5.992306,&quot;CUP&quot;:0.287153,&quot;CVE&quot;:1.238034,&quot;CZK&quot;:0.283483,&quot;DJF&quot;:2.12638,&quot;DKK&quot;:0.083826,&quot;DOP&quot;:0.705963,&quot;DZD&quot;:1.610184,&quot;EGP&quot;:0.579272,&quot;ERN&quot;:0.179471,&quot;ETB&quot;:0.681205,&quot;EUR&quot;:0.011228,&quot;FJD&quot;:0.027187,&quot;FKP&quot;:0.009608,&quot;FOK&quot;:0.083827,&quot;GBP&quot;:0.009608,&quot;GEL&quot;:0.031941,&quot;GGP&quot;:0.009608,&quot;GHS&quot;:0.162349,&quot;GIP&quot;:0.009608,&quot;GMD&quot;:0.792494,&quot;GNF&quot;:102.66752,&quot;GTQ&quot;:0.093063,&quot;GYD&quot;:2.505778,&quot;HKD&quot;:0.093729,&quot;HNL&quot;:0.295533,&quot;HRK&quot;:0.084596,&quot;HTG&quot;:1.586059,&quot;HUF&quot;:4.42079,&quot;IDR&quot;:193.74488,&quot;ILS&quot;:0.045335,&quot;IMP&quot;:0.009608,&quot;IQD&quot;:15.685106,&quot;IRR&quot;:509.084905,&quot;ISK&quot;:1.685093,&quot;JEP&quot;:0.009608,&quot;JMD&quot;:1.857738,&quot;JOD&quot;:0.008483,&quot;JPY&quot;:1.849138,&quot;KES&quot;:1.592382,&quot;KGS&quot;:1.067738,&quot;KHR&quot;:48.5,&quot;KID&quot;:0.018604,&quot;KMF&quot;:5.523718,&quot;KRW&quot;:16.485412,&quot;KWD&quot;:0.003689,&quot;KYD&quot;:0.009971,&quot;KZT&quot;:5.348823,&quot;LAK&quot;:249.957075,&quot;LBP&quot;:1070.841629,&quot;LKR&quot;:3.607981,&quot;LRD&quot;:2.326058,&quot;LSL&quot;:0.2285,&quot;LYD&quot;:0.058418,&quot;MAD&quot;:0.121202,&quot;MDL&quot;:0.213843,&quot;MGA&quot;:52.657143,&quot;MKD&quot;:0.692958,&quot;MMK&quot;:30.346198,&quot;MNT&quot;:40.325443,&quot;MOP&quot;:0.096541,&quot;MRU&quot;:0.473962,&quot;MUR&quot;:0.557689,&quot;MVR&quot;:0.18476,&quot;MWK&quot;:20.844866,&quot;MXN&quot;:0.203788,&quot;MYR&quot;:0.057259,&quot;MZN&quot;:0.765241,&quot;NAD&quot;:0.2285,&quot;NGN&quot;:14.073387,&quot;NIO&quot;:0.440963,&quot;NOK&quot;:0.131846,&quot;NPR&quot;:1.6,&quot;NZD&quot;:0.020241,&quot;OMR&quot;:0.0046,&quot;PAB&quot;:0.011965,&quot;PEN&quot;:0.044763,&quot;PGK&quot;:0.045431,&quot;PHP&quot;:0.685487,&quot;PKR&quot;:3.330915,&quot;PLN&quot;:0.048641,&quot;PYG&quot;:88.129312,&quot;QAR&quot;:0.043552,&quot;RON&quot;:0.055787,&quot;RSD&quot;:1.313405,&quot;RUB&quot;:1.127453,&quot;RWF&quot;:15.793663,&quot;SAR&quot;:0.044868,&quot;SBD&quot;:0.101509,&quot;SCR&quot;:0.166772,&quot;SDG&quot;:5.349782,&quot;SEK&quot;:0.130864,&quot;SGD&quot;:0.016289,&quot;SHP&quot;:0.009608,&quot;SLE&quot;:0.270874,&quot;SLL&quot;:270.873795,&quot;SOS&quot;:6.83859,&quot;SRD&quot;:0.417015,&quot;SSP&quot;:18.667751,&quot;STN&quot;:0.275081,&quot;SYP&quot;:154.491215,&quot;SZL&quot;:0.2285,&quot;THB&quot;:0.440318,&quot;TJS&quot;:0.130893,&quot;TMT&quot;:0.041894,&quot;TND&quot;:0.03774,&quot;TOP&quot;:0.028171,&quot;TRY&quot;:0.389202,&quot;TTD&quot;:0.081153,&quot;TVD&quot;:0.018604,&quot;TWD&quot;:0.388226,&quot;TZS&quot;:30.988894,&quot;UAH&quot;:0.474198,&quot;UGX&quot;:45.560373,&quot;USD&quot;:0.011965,&quot;UYU&quot;:0.4649,&quot;UZS&quot;:152.472332,&quot;VES&quot;:0.434823,&quot;VND&quot;:304.740705,&quot;VUV&quot;:1.461011,&quot;WST&quot;:0.032954,&quot;XAF&quot;:7.364957,&quot;XCD&quot;:0.032305,&quot;XDR&quot;:0.009084,&quot;XOF&quot;:7.364957,&quot;XPF&quot;:1.339836,&quot;YER&quot;:2.995441,&quot;ZAR&quot;:0.228912,&quot;ZMW&quot;:0.305111,&quot;ZWL&quot;:0.159654}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == exchangeRateApiSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.base_code == &#39;INR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def rateCount = karate.sizeOf(response.rates)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert rateCount == 162</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:21]</span>
+                <span class="scenario-name">Verify exchange Rate range of Currency AED with base currency as USD</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>63</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseCurrency = &#39;USD&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">20:43:40.886 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path baseCurrency</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">52</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">20:43:40.892 request:
+1 &gt; GET https://open.er-api.com/v6/latest/USD
+1 &gt; Host: open.er-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:43:40.940 response time in milliseconds: 48
+1 &lt; 200
+1 &lt; Date: Fri, 19 Apr 2024 15:13:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; Cache-Control: public, max-age=3600
+1 &lt; x-content-type-options: NOSNIFF
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; Last-Modified: Fri, 19 Apr 2024 14:06:09 GMT
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 3089
+1 &lt; Accept-Ranges: bytes
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=iwLlkPNvcdSrMylMdwqKnnIAincANrpJbsPhI%2BmM0ZbkZNv4s2gMzhmQNN9VxFAiDhcPi%2BXAv7nXJ2ewggvfq5IKpNPHFfvzvhnzVO42CzV%2FnZxzu2VYK824m7Zhewnypg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 876dd706cdb48593-BOM
+{&quot;result&quot;:&quot;success&quot;,&quot;provider&quot;:&quot;https://www.exchangerate-api.com&quot;,&quot;documentation&quot;:&quot;https://www.exchangerate-api.com/docs/free&quot;,&quot;terms_of_use&quot;:&quot;https://www.exchangerate-api.com/terms&quot;,&quot;time_last_update_unix&quot;:1713484951,&quot;time_last_update_utc&quot;:&quot;Fri, 19 Apr 2024 00:02:31 +0000&quot;,&quot;time_next_update_unix&quot;:1713572621,&quot;time_next_update_utc&quot;:&quot;Sat, 20 Apr 2024 00:23:41 +0000&quot;,&quot;time_eol_unix&quot;:0,&quot;base_code&quot;:&quot;USD&quot;,&quot;rates&quot;:{&quot;USD&quot;:1,&quot;AED&quot;:3.6725,&quot;AFN&quot;:71.880054,&quot;ALL&quot;:95.125632,&quot;AMD&quot;:395.275713,&quot;ANG&quot;:1.79,&quot;AOA&quot;:844.081605,&quot;ARS&quot;:864.75,&quot;AUD&quot;:1.555364,&quot;AWG&quot;:1.79,&quot;AZN&quot;:1.699851,&quot;BAM&quot;:1.835638,&quot;BBD&quot;:2,&quot;BDT&quot;:109.748642,&quot;BGN&quot;:1.835188,&quot;BHD&quot;:0.376,&quot;BIF&quot;:2855.547946,&quot;BMD&quot;:1,&quot;BND&quot;:1.36137,&quot;BOB&quot;:6.927649,&quot;BRL&quot;:5.240698,&quot;BSD&quot;:1,&quot;BTN&quot;:83.579077,&quot;BWP&quot;:13.838373,&quot;BYN&quot;:3.271865,&quot;BZD&quot;:2,&quot;CAD&quot;:1.37588,&quot;CDF&quot;:2753.408567,&quot;CHF&quot;:0.911297,&quot;CLP&quot;:977.98885,&quot;CNY&quot;:7.245235,&quot;COP&quot;:3903.022492,&quot;CRC&quot;:500.840568,&quot;CUP&quot;:24,&quot;CVE&quot;:103.488877,&quot;CZK&quot;:23.700816,&quot;DJF&quot;:177.721,&quot;DKK&quot;:7.005368,&quot;DOP&quot;:59.01933,&quot;DZD&quot;:134.647688,&quot;EGP&quot;:48.38934,&quot;ERN&quot;:15,&quot;ETB&quot;:56.912738,&quot;EUR&quot;:0.93855,&quot;FJD&quot;:2.270023,&quot;FKP&quot;:0.803183,&quot;FOK&quot;:7.005576,&quot;GBP&quot;:0.80319,&quot;GEL&quot;:2.672123,&quot;GGP&quot;:0.803183,&quot;GHS&quot;:13.542739,&quot;GIP&quot;:0.803183,&quot;GMD&quot;:66.589892,&quot;GNF&quot;:8584.659368,&quot;GTQ&quot;:7.778461,&quot;GYD&quot;:209.47614,&quot;HKD&quot;:7.831134,&quot;HNL&quot;:24.709611,&quot;HRK&quot;:7.071482,&quot;HTG&quot;:132.527462,&quot;HUF&quot;:370.051394,&quot;IDR&quot;:16194.306987,&quot;ILS&quot;:3.789936,&quot;IMP&quot;:0.803183,&quot;INR&quot;:83.57912,&quot;IQD&quot;:1310.902902,&quot;IRR&quot;:41997.02635,&quot;ISK&quot;:140.753423,&quot;JEP&quot;:0.803183,&quot;JMD&quot;:155.758265,&quot;JOD&quot;:0.709,&quot;JPY&quot;:154.536484,&quot;KES&quot;:131.944453,&quot;KGS&quot;:89.19853,&quot;KHR&quot;:4052.438748,&quot;KID&quot;:1.554708,&quot;KMF&quot;:461.73482,&quot;KRW&quot;:1377.678274,&quot;KWD&quot;:0.308262,&quot;KYD&quot;:0.833333,&quot;KZT&quot;:446.993173,&quot;LAK&quot;:20992.186273,&quot;LBP&quot;:89500,&quot;LKR&quot;:301.234576,&quot;LRD&quot;:194.389162,&quot;LSL&quot;:19.131355,&quot;LYD&quot;:4.863492,&quot;MAD&quot;:10.121543,&quot;MDL&quot;:17.920754,&quot;MGA&quot;:4392.367282,&quot;MKD&quot;:57.916748,&quot;MMK&quot;:2097.278736,&quot;MNT&quot;:3371.997629,&quot;MOP&quot;:8.066068,&quot;MRU&quot;:39.658565,&quot;MUR&quot;:46.47281,&quot;MVR&quot;:15.448248,&quot;MWK&quot;:1740.58032,&quot;MXN&quot;:17.065934,&quot;MYR&quot;:4.783685,&quot;MZN&quot;:63.945176,&quot;NAD&quot;:19.131355,&quot;NGN&quot;:1133.029096,&quot;NIO&quot;:36.839749,&quot;NOK&quot;:11.039204,&quot;NPR&quot;:133.726524,&quot;NZD&quot;:1.692546,&quot;OMR&quot;:0.384497,&quot;PAB&quot;:1,&quot;PEN&quot;:3.740493,&quot;PGK&quot;:3.798317,&quot;PHP&quot;:57.307974,&quot;PKR&quot;:278.249993,&quot;PLN&quot;:4.06808,&quot;PYG&quot;:7377.092349,&quot;QAR&quot;:3.64,&quot;RON&quot;:4.66225,&quot;RSD&quot;:109.80664,&quot;RUB&quot;:94.200579,&quot;RWF&quot;:1299.301054,&quot;SAR&quot;:3.75,&quot;SBD&quot;:8.512023,&quot;SCR&quot;:13.563727,&quot;SDG&quot;:512.036827,&quot;SEK&quot;:10.9571,&quot;SGD&quot;:1.361163,&quot;SHP&quot;:0.803183,&quot;SLE&quot;:22.639393,&quot;SLL&quot;:22639.393086,&quot;SOS&quot;:571.699909,&quot;SRD&quot;:34.773166,&quot;SSP&quot;:1566.911774,&quot;STN&quot;:22.9944,&quot;SYP&quot;:12935.725165,&quot;SZL&quot;:19.131355,&quot;THB&quot;:36.791227,&quot;TJS&quot;:10.93431,&quot;TMT&quot;:3.500401,&quot;TND&quot;:3.155909,&quot;TOP&quot;:2.355385,&quot;TRY&quot;:32.576287,&quot;TTD&quot;:6.755884,&quot;TVD&quot;:1.554708,&quot;TWD&quot;:32.45849,&quot;TZS&quot;:2583.212617,&quot;UAH&quot;:39.612941,&quot;UGX&quot;:3809.907006,&quot;UYU&quot;:38.869302,&quot;UZS&quot;:12696.88128,&quot;VES&quot;:36.3421,&quot;VND&quot;:25373.591022,&quot;VUV&quot;:122.109586,&quot;WST&quot;:2.776899,&quot;XAF&quot;:615.646426,&quot;XCD&quot;:2.7,&quot;XDR&quot;:0.758651,&quot;XOF&quot;:615.646426,&quot;XPF&quot;:111.998682,&quot;YER&quot;:250.36877,&quot;ZAR&quot;:19.134496,&quot;ZMW&quot;:25.415779,&quot;ZWL&quot;:13.3437}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def aedExchangeRate =  response.rates.AED</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert aedExchangeRate &gt;=3.6 &amp;&amp; aedExchangeRate &lt;=3.7</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
