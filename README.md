@@ -40,6 +40,15 @@ The test structure follows the standard Karate BDD directory structure:
 │   |        └── features            
 │   |            └── ExchangeRateApiTest.feature ( Karate feature file)
 |   |__ karate-config.js ( contains environment and suit global variables)
+
+
+Test cases file : ExchangeRateApiTest.feature
+
+![image](https://github.com/aiazm496/KarateApiTesting/assets/67946114/5d2a01f8-a42b-4875-b74e-ad5b5ff713d9)
+
+
+Test results report will be generated in the target folder with name : karate-summary.html
+![image](https://github.com/aiazm496/KarateApiTesting/assets/67946114/73d3f848-9b14-463f-b134-b7653d3cc801)
    
 
 Contributing
